@@ -41,6 +41,7 @@
             this.cmbEnd = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.cmbStart = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.tbstripMenu = new DevComponents.DotNetBar.TabStrip();
+            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.metroToolbar1 = new DevComponents.DotNetBar.Metro.MetroToolbar();
             this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
             this.checkBoxItem1 = new DevComponents.DotNetBar.CheckBoxItem();
@@ -51,7 +52,6 @@
             this.checkBoxItem6 = new DevComponents.DotNetBar.CheckBoxItem();
             this.checkBoxItem7 = new DevComponents.DotNetBar.CheckBoxItem();
             this.checkBoxItem8 = new DevComponents.DotNetBar.CheckBoxItem();
-            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtBookTicketDate)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +68,7 @@
             this.superGridViewForTicket.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Horizontal;
             this.superGridViewForTicket.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.RowWithCellHighlight;
             this.superGridViewForTicket.PrimaryGrid.UseAlternateRowStyle = true;
-            this.superGridViewForTicket.Size = new System.Drawing.Size(1108, 400);
+            this.superGridViewForTicket.Size = new System.Drawing.Size(1061, 400);
             this.superGridViewForTicket.TabIndex = 3;
             // 
             // metroStatusBar1
@@ -87,7 +87,7 @@
             this.lblitem});
             this.metroStatusBar1.Location = new System.Drawing.Point(0, 517);
             this.metroStatusBar1.Name = "metroStatusBar1";
-            this.metroStatusBar1.Size = new System.Drawing.Size(1105, 16);
+            this.metroStatusBar1.Size = new System.Drawing.Size(1058, 16);
             this.metroStatusBar1.TabIndex = 5;
             this.metroStatusBar1.Text = "metroStatusBar1";
             // 
@@ -239,12 +239,12 @@
             this.btnQuery.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuery.Location = new System.Drawing.Point(836, 28);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(222, 26);
+            this.btnQuery.Size = new System.Drawing.Size(162, 26);
             this.btnQuery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnQuery.Symbol = "";
             this.btnQuery.SymbolColor = System.Drawing.Color.Teal;
             this.btnQuery.TabIndex = 18;
-            this.btnQuery.Text = "查询";
+            this.btnQuery.Text = "开始购票";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
             // cmbEnd
@@ -254,11 +254,11 @@
             this.cmbEnd.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbEnd.ForeColor = System.Drawing.Color.Black;
             this.cmbEnd.FormattingEnabled = true;
-            this.cmbEnd.ItemHeight = 20;
+            this.cmbEnd.ItemHeight = 16;
             this.cmbEnd.Location = new System.Drawing.Point(447, 29);
             this.cmbEnd.Name = "cmbEnd";
             this.cmbEnd.PreventEnterBeep = true;
-            this.cmbEnd.Size = new System.Drawing.Size(121, 26);
+            this.cmbEnd.Size = new System.Drawing.Size(121, 22);
             this.cmbEnd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbEnd.TabIndex = 20;
             // 
@@ -268,11 +268,11 @@
             this.cmbStart.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbStart.ForeColor = System.Drawing.Color.Black;
             this.cmbStart.FormattingEnabled = true;
-            this.cmbStart.ItemHeight = 20;
+            this.cmbStart.ItemHeight = 16;
             this.cmbStart.Location = new System.Drawing.Point(162, 28);
             this.cmbStart.Name = "cmbStart";
             this.cmbStart.PreventEnterBeep = true;
-            this.cmbStart.Size = new System.Drawing.Size(121, 26);
+            this.cmbStart.Size = new System.Drawing.Size(121, 22);
             this.cmbStart.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbStart.TabIndex = 21;
             // 
@@ -282,7 +282,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbstripMenu.AutoSelectAttachedControl = true;
             this.tbstripMenu.CanReorderTabs = true;
-            this.tbstripMenu.CloseButtonVisible = true;
+            this.tbstripMenu.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
+            this.tbstripMenu.CloseButtonVisible = false;
             this.tbstripMenu.Cursor = System.Windows.Forms.Cursors.Default;
             this.tbstripMenu.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbstripMenu.ForeColor = System.Drawing.Color.Black;
@@ -290,12 +291,17 @@
             this.tbstripMenu.Name = "tbstripMenu";
             this.tbstripMenu.SelectedTab = this.tabItem1;
             this.tbstripMenu.SelectedTabFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
-            this.tbstripMenu.Size = new System.Drawing.Size(1107, 27);
+            this.tbstripMenu.Size = new System.Drawing.Size(1060, 27);
             this.tbstripMenu.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
             this.tbstripMenu.TabIndex = 22;
             this.tbstripMenu.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.MultilineNoNavigationBox;
             this.tbstripMenu.Tabs.Add(this.tabItem1);
             this.tbstripMenu.Text = "tabStrip1";
+            // 
+            // tabItem1
+            // 
+            this.tabItem1.Name = "tabItem1";
+            this.tabItem1.Text = "                 选择您的预订日期     ";
             // 
             // metroToolbar1
             // 
@@ -321,10 +327,10 @@
             this.checkBoxItem6,
             this.checkBoxItem7,
             this.checkBoxItem8});
-            this.metroToolbar1.Location = new System.Drawing.Point(46, 72);
+            this.metroToolbar1.Location = new System.Drawing.Point(74, 72);
             this.metroToolbar1.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.metroToolbar1.Name = "metroToolbar1";
-            this.metroToolbar1.Size = new System.Drawing.Size(581, 22);
+            this.metroToolbar1.Size = new System.Drawing.Size(534, 22);
             this.metroToolbar1.TabIndex = 23;
             // 
             // labelItem1
@@ -334,36 +340,50 @@
             // 
             // checkBoxItem1
             // 
+            this.checkBoxItem1.Checked = true;
+            this.checkBoxItem1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxItem1.Name = "checkBoxItem1";
             this.checkBoxItem1.Text = "全部";
             // 
             // checkBoxItem2
             // 
+            this.checkBoxItem2.Checked = true;
+            this.checkBoxItem2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxItem2.Name = "checkBoxItem2";
             this.checkBoxItem2.Text = "D字头";
             // 
             // checkBoxItem3
             // 
+            this.checkBoxItem3.Checked = true;
+            this.checkBoxItem3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxItem3.Name = "checkBoxItem3";
             this.checkBoxItem3.Text = "G字头";
             // 
             // checkBoxItem4
             // 
+            this.checkBoxItem4.Checked = true;
+            this.checkBoxItem4.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxItem4.Name = "checkBoxItem4";
             this.checkBoxItem4.Text = "Z字头";
             // 
             // checkBoxItem5
             // 
+            this.checkBoxItem5.Checked = true;
+            this.checkBoxItem5.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxItem5.Name = "checkBoxItem5";
             this.checkBoxItem5.Text = "T字头";
             // 
             // checkBoxItem6
             // 
+            this.checkBoxItem6.Checked = true;
+            this.checkBoxItem6.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxItem6.Name = "checkBoxItem6";
             this.checkBoxItem6.Text = "K字头";
             // 
             // checkBoxItem7
             // 
+            this.checkBoxItem7.Checked = true;
+            this.checkBoxItem7.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxItem7.Name = "checkBoxItem7";
             this.checkBoxItem7.Text = "其他";
             // 
@@ -372,16 +392,11 @@
             this.checkBoxItem8.Name = "checkBoxItem8";
             this.checkBoxItem8.Text = "学生票";
             // 
-            // tabItem1
-            // 
-            this.tabItem1.Name = "tabItem1";
-            this.tabItem1.Text = "          预订日期     ";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 533);
+            this.ClientSize = new System.Drawing.Size(1058, 533);
             this.Controls.Add(this.metroToolbar1);
             this.Controls.Add(this.tbstripMenu);
             this.Controls.Add(this.cmbStart);
@@ -398,13 +413,14 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButtonVisible = true;
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.MaximumSizeChanged += new System.EventHandler(this.MainForm_MaximumSizeChanged);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dtBookTicketDate)).EndInit();
             this.ResumeLayout(false);
 

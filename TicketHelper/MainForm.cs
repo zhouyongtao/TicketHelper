@@ -41,14 +41,13 @@ namespace TicketHelper
             this.cmbEnd.Text = "明光";
 
             //加载菜单
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 6; i++)
             {
                 this.tbstripMenu.Tabs.Add(new TabItem()
                 {
                     Text = WeekDayHandler.GetWeekDayDetail(DateTime.Now.AddDays(i))
                 });
             }
-
         }
 
 
@@ -70,6 +69,36 @@ namespace TicketHelper
             string temp = this.cmbStart.Text;
             this.cmbStart.Text = this.cmbEnd.Text;
             this.cmbEnd.Text = temp;
+        }
+
+        private void MainForm_MaximumSizeChanged(object sender, EventArgs e)
+        {
+            if (this.MaximizeBox)
+            {
+                this.tbstripMenu.Tabs.Add(new TabItem()
+                 {
+                     Text = WeekDayHandler.GetWeekDayDetail(DateTime.Now.AddDays(this.tbstripMenu.Tabs.Count + 1))
+                 });
+            }
+        }
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            int num = this.tbstripMenu.Tabs.Count - 1;
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    this.tbstripMenu.Tabs.Add(new TabItem()
+                    {
+                        Text = WeekDayHandler.GetWeekDayDetail(DateTime.Now.AddDays(num + i))
+                    });
+                }
+            }
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.tbstripMenu.Tabs.RemoveAt(num);
+                this.tbstripMenu.Tabs.RemoveAt(num-1);
+            }
         }
     }
 }
