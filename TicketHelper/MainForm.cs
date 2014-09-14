@@ -52,5 +52,14 @@ namespace TicketHelper
             if (this.dtBookTicketDate.Text.IsEmpty() || this.cmbStart.SelectedValue.IsNull() || this.cmbEnd.SelectedValue.IsNull()) return;
             var data = await TicketHandler.queryleftTicket(Convert.ToDateTime((this.dtBookTicketDate.Text)).ToString("yyyy-MM-dd"), this.cmbStart.SelectedValue.ToString(), this.cmbEnd.SelectedValue.ToString());
         }
+
+        private void lblChangeStation_Click(object sender, EventArgs e)
+        {
+            if (this.cmbStart.SelectedValue.IsNull() || this.cmbEnd.SelectedValue.IsNull()) return;
+            string temp = this.cmbStart.Text;
+            temp = this.cmbStart.Text;
+            this.cmbStart.Text = this.cmbEnd.Text;
+            this.cmbEnd.Text = temp;
+        }
     }
 }

@@ -110,6 +110,7 @@ namespace TicketHelper.Ticket
                     string content = await response.Content.ReadAsStringAsync();
                     if (string.IsNullOrEmpty(content) || !content.Contains("Y") || !content.Contains("loginCheck")) return false;
                     //{"validateMessagesShowId":"_validatorMessage","status":true,"httpstatus":200,"data":{"loginCheck":"Y"},"messages":[],"validateMessages":{}}
+                    //{"validateMessagesShowId":"_validatorMessage","status":true,"httpstatus":200,"data":{},"messages":["验证码不正确！"],"validateMessages":{}}
                     return true;
                 }
             }

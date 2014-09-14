@@ -35,11 +35,11 @@ namespace TicketHelper
             this.HelpButtonClick += LoginForm_HelpButtonClick;
             this.btnLogin.Click += btnLogin_Click;
             //加载用户名与密码
-            string filePath = Directory.GetCurrentDirectory() + "\\data\\loginData.txt";
+            string filePath = Environment.CurrentDirectory + "\\data\\account.data";
             if (File.Exists(filePath))
             {
                 var loginData = DESEncrypt.Decrypt(File.ReadAllText(filePath));
-                if (!loginData.IsEmpty())
+                if (!loginData.IsEmpty() && loginData.Contains("@") && loginData.Split("@").Length == 2)
                 {
                     this.txtName.Text = loginData.Split("@")[0];
                     this.txtPwd.Text = loginData.Split("@")[1];
@@ -103,9 +103,11 @@ namespace TicketHelper
             bool loginIn = await TicketHandler.loginVerifyLogin(this.txtName.Text.Trim(), this.txtPwd.Text.Trim(), this.txtVerifyNo.Text.Trim());
             if (!loginIn)
             {
+                //这里有时间优化一下
                 this.txtPwd.FocusHighlightColor = Color.Red;
                 this.txtPwd.FocusHighlightEnabled = true;
                 this.txtPwd.Focus();
+                return;
             }
             _loginName = this.txtName.Text;
             if (this.cbxRemMe.Checked)
@@ -119,15 +121,15 @@ namespace TicketHelper
                     {
                         Directory.CreateDirectory(dirPath);
                     }
-                    string filePath = dirPath + "\\loginData.txt";
+                    string filePath = dirPath + "\\account.data";
                     if (File.Exists(filePath))
                     {
                         File.Delete(filePath);
                     }
-                    var file = new FileInfo(filePath).CreateText();
-                    file.Write(loginData);
-                    file.Flush();
-                    file.Close();
+                    using (var writer = new StreamWriter(filePath, false, Encoding.Default))
+                    {
+                        writer.Write(loginData);
+                    }
                 }
                 catch (Exception ex)
                 {

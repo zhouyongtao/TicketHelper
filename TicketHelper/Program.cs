@@ -18,13 +18,14 @@ namespace TicketHelper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            var login = new LoginForm();
-            if (login.ShowDialog() == DialogResult.OK)
-            {
-                Application.Run(new MainForm(login._loginName));
-            }
-
-            //Application.Run(new MainForm());
+            Application.Run(new MainForm());
+            /*
+              var login = new LoginForm();
+                if (login.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new MainForm(login._loginName));
+                }
+             */
         }
     }
 }

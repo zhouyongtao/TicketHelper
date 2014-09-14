@@ -34,7 +34,7 @@
             this.lblitem = new DevComponents.DotNetBar.LabelItem();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.lblChangeStation = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.dtBookTicketDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.btnQuery = new DevComponents.DotNetBar.ButtonX();
@@ -65,8 +65,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.superGridViewForTicket.BackColor = System.Drawing.Color.White;
             this.superGridViewForTicket.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
-            this.superGridViewForTicket.ForeColor = System.Drawing.Color.White;
-            this.superGridViewForTicket.Location = new System.Drawing.Point(-3, 121);
+            this.superGridViewForTicket.ForeColor = System.Drawing.Color.Black;
+            this.superGridViewForTicket.Location = new System.Drawing.Point(-2, 121);
             this.superGridViewForTicket.Name = "superGridViewForTicket";
             this.superGridViewForTicket.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Horizontal;
             this.superGridViewForTicket.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.RowWithCellHighlight;
@@ -137,22 +137,23 @@
             this.labelX2.Text = "到达站 :";
             this.labelX2.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // labelX3
+            // lblChangeStation
             // 
-            this.labelX3.BackColor = System.Drawing.Color.White;
+            this.lblChangeStation.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(293, 27);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(32, 25);
-            this.labelX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
-            this.labelX3.Symbol = "";
-            this.labelX3.SymbolColor = System.Drawing.Color.LightSeaGreen;
-            this.labelX3.TabIndex = 12;
+            this.lblChangeStation.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblChangeStation.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChangeStation.ForeColor = System.Drawing.Color.Black;
+            this.lblChangeStation.Location = new System.Drawing.Point(293, 27);
+            this.lblChangeStation.Name = "lblChangeStation";
+            this.lblChangeStation.Size = new System.Drawing.Size(32, 25);
+            this.lblChangeStation.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.lblChangeStation.Symbol = "";
+            this.lblChangeStation.SymbolColor = System.Drawing.Color.LightSeaGreen;
+            this.lblChangeStation.TabIndex = 12;
+            this.lblChangeStation.Click += new System.EventHandler(this.lblChangeStation_Click);
             // 
             // labelX4
             // 
@@ -288,10 +289,11 @@
             this.tabStrip1.CloseButtonVisible = true;
             this.tabStrip1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabStrip1.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabStrip1.ForeColor = System.Drawing.Color.White;
+            this.tabStrip1.ForeColor = System.Drawing.Color.Black;
             this.tabStrip1.Location = new System.Drawing.Point(0, 95);
             this.tabStrip1.Name = "tabStrip1";
             this.tabStrip1.SelectedTab = this.谢谢;
+            this.tabStrip1.SelectedTabFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
             this.tabStrip1.Size = new System.Drawing.Size(1046, 27);
             this.tabStrip1.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
             this.tabStrip1.TabIndex = 22;
@@ -326,6 +328,7 @@
             // 
             this.metroToolbar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroToolbar1.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
@@ -334,7 +337,7 @@
             this.metroToolbar1.DragDropSupport = true;
             this.metroToolbar1.ExpandButtonVisible = false;
             this.metroToolbar1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
-            this.metroToolbar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.metroToolbar1.ForeColor = System.Drawing.Color.Black;
             this.metroToolbar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.labelItem1,
             this.checkBoxItem1,
@@ -408,7 +411,7 @@
             this.Controls.Add(this.btnQuery);
             this.Controls.Add(this.dtBookTicketDate);
             this.Controls.Add(this.labelX4);
-            this.Controls.Add(this.labelX3);
+            this.Controls.Add(this.lblChangeStation);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.labelX1);
             this.Controls.Add(this.metroStatusBar1);
@@ -422,6 +425,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtBookTicketDate)).EndInit();
             this.ResumeLayout(false);
@@ -435,7 +439,7 @@
         private DevComponents.DotNetBar.LabelItem lblitem;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.LabelX lblChangeStation;
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dtBookTicketDate;
         private DevComponents.DotNetBar.ButtonX btnQuery;
