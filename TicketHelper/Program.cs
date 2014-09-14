@@ -20,11 +20,11 @@ namespace TicketHelper
             Application.SetCompatibleTextRenderingDefault(true);
             Application.Run(new MainForm());
             /*
-              var login = new LoginForm();
-                if (login.ShowDialog() == DialogResult.OK)
-                {
-                    Application.Run(new MainForm(login._loginName));
-                }
+            var login = new LoginForm();
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MainForm(login._loginName));
+            }
              */
         }
     }

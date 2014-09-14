@@ -36,12 +36,42 @@
     </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar.Layout, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
-    <Reference Include="DevComponents.DotNetBar2, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b" />
-    <Reference Include="DevComponents.Instrumentation, Version=11.8.0.8, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0" />
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.DotNetBar.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout.Design, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.8.0.8, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=11.8.0.8, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=11.8.0.8, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=11.8.0.8, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -123,12 +153,28 @@
     <Content Include="assets\smile.ico" />
     <Content Include="assets\find.ico" />
     <Content Include="assets\t.png" />
+    <Content Include="assets\ticket.jpg" />
     <Content Include="assets\u.png" />
     <Content Include="assets\ware.ico" />
     <Content Include="assets\end.ico" />
     <Content Include="assets\start.ico" />
     <Content Include="assets\book.ico" />
     <Content Include="assets\z.png" />
+    <Content Include="Lib\DevComponents.DotNetBar.Keyboard.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar.Keyboard.XML" />
+    <Content Include="Lib\DevComponents.DotNetBar.Layout.Design.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar.Layout.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar.Schedule.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar.Schedule.XML" />
+    <Content Include="Lib\DevComponents.DotNetBar.SuperGrid.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar.SuperGrid.XML" />
+    <Content Include="Lib\DevComponents.DotNetBar.xml" />
+    <Content Include="Lib\DevComponents.DotNetBar2.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar2.xml" />
+    <Content Include="Lib\DevComponents.Instrumentation.dll" />
+    <Content Include="Lib\DevComponents.Instrumentation.XML" />
+    <Content Include="Lib\DevComponents.SuperGrid.Design.dll" />
+    <Content Include="Lib\DevComponents.TreeGX.dll" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
