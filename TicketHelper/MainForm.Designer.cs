@@ -241,10 +241,10 @@
             this.btnQuery.Name = "btnQuery";
             this.btnQuery.Size = new System.Drawing.Size(162, 26);
             this.btnQuery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnQuery.Symbol = "";
+            this.btnQuery.Symbol = "";
             this.btnQuery.SymbolColor = System.Drawing.Color.Teal;
             this.btnQuery.TabIndex = 18;
-            this.btnQuery.Text = "开始购票";
+            this.btnQuery.Text = "开始刷票";
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
             // cmbEnd
