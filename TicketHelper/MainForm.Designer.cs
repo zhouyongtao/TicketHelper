@@ -436,7 +436,7 @@
             // 
             this.radialMenuItem4.Name = "radialMenuItem4";
             this.radialMenuItem4.Symbol = "";
-            this.radialMenuItem4.Text = "微信求约";
+            this.radialMenuItem4.Text = "微信";
             // 
             // MainForm
             // 
