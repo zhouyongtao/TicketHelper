@@ -20,6 +20,7 @@ namespace TicketHelper
     public partial class LoginForm : DevComponents.DotNetBar.Metro.MetroForm
     {
         private Logger logger = LogManager.GetCurrentClassLogger();
+        public string _loginName;
         public LoginForm()
         {
             InitializeComponent();
@@ -106,7 +107,7 @@ namespace TicketHelper
                 this.txtPwd.FocusHighlightEnabled = true;
                 this.txtPwd.Focus();
             }
-
+            _loginName = this.txtName.Text;
             if (this.cbxRemMe.Checked)
             {
                 try

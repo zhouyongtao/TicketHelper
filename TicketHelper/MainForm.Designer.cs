@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn221 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn222 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn223 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn224 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn225 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn66 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn67 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn68 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn69 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn70 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             this.superGridControl1 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.metroStatusBar1 = new DevComponents.DotNetBar.Metro.MetroStatusBar();
             this.lblitem = new DevComponents.DotNetBar.LabelItem();
@@ -55,18 +55,18 @@
             this.superGridControl1.BackColor = System.Drawing.Color.White;
             this.superGridControl1.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
             this.superGridControl1.ForeColor = System.Drawing.Color.Black;
-            this.superGridControl1.Location = new System.Drawing.Point(12, 123);
+            this.superGridControl1.Location = new System.Drawing.Point(-2, 123);
             this.superGridControl1.Name = "superGridControl1";
-            gridColumn221.Name = "用户名";
-            gridColumn222.Name = "密码";
-            gridColumn223.Name = "火车";
-            gridColumn224.Name = "飞机";
-            gridColumn225.Name = "轮船";
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn221);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn222);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn223);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn224);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn225);
+            gridColumn66.Name = "用户名";
+            gridColumn67.Name = "密码";
+            gridColumn68.Name = "火车";
+            gridColumn69.Name = "飞机";
+            gridColumn70.Name = "轮船";
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn66);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn67);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn68);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn69);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn70);
             this.superGridControl1.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Horizontal;
             this.superGridControl1.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.RowWithCellHighlight;
             this.superGridControl1.PrimaryGrid.ShowTreeLines = true;
@@ -152,7 +152,7 @@
             this.labelX3.Size = new System.Drawing.Size(32, 25);
             this.labelX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.labelX3.Symbol = "";
-            this.labelX3.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.labelX3.SymbolColor = System.Drawing.Color.LightSeaGreen;
             this.labelX3.TabIndex = 12;
             // 
             // labelX4
@@ -178,6 +178,7 @@
             // 
             this.dateTimeInput2.AllowEmptyState = false;
             this.dateTimeInput2.AutoAdvance = true;
+            this.dateTimeInput2.AutoOverwrite = false;
             this.dateTimeInput2.AutoSelectDate = true;
             this.dateTimeInput2.BackColor = System.Drawing.Color.White;
             // 
@@ -187,13 +188,12 @@
             this.dateTimeInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dateTimeInput2.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.dateTimeInput2.ButtonDropDown.Visible = true;
-            this.dateTimeInput2.ButtonFreeText.Checked = true;
-            this.dateTimeInput2.CustomFormat = "yyyy-MM-dd";
+            this.dateTimeInput2.DefaultInputValues = false;
             this.dateTimeInput2.DisabledBackColor = System.Drawing.Color.Gray;
             this.dateTimeInput2.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dateTimeInput2.ForeColor = System.Drawing.Color.Black;
-            this.dateTimeInput2.FreeTextEntryMode = true;
             this.dateTimeInput2.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Center;
+            this.dateTimeInput2.InputMouseWheelEnabled = false;
             this.dateTimeInput2.IsPopupCalendarOpen = false;
             this.dateTimeInput2.Location = new System.Drawing.Point(680, 30);
             // 
@@ -257,26 +257,26 @@
             this.cmbEnd.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbEnd.ForeColor = System.Drawing.Color.Black;
             this.cmbEnd.FormattingEnabled = true;
-            this.cmbEnd.ItemHeight = 20;
+            this.cmbEnd.ItemHeight = 16;
             this.cmbEnd.Location = new System.Drawing.Point(443, 29);
             this.cmbEnd.Name = "cmbEnd";
             this.cmbEnd.PreventEnterBeep = true;
-            this.cmbEnd.Size = new System.Drawing.Size(121, 26);
+            this.cmbEnd.Size = new System.Drawing.Size(121, 22);
             this.cmbEnd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbEnd.TabIndex = 20;
             // 
             // cmbStart
             // 
-            this.cmbStart.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbStart.DisplayMember = "Text";
             this.cmbStart.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbStart.ForeColor = System.Drawing.Color.Black;
             this.cmbStart.FormattingEnabled = true;
-            this.cmbStart.ItemHeight = 20;
+            this.cmbStart.ItemHeight = 16;
             this.cmbStart.Location = new System.Drawing.Point(162, 29);
             this.cmbStart.Name = "cmbStart";
             this.cmbStart.PreventEnterBeep = true;
-            this.cmbStart.Size = new System.Drawing.Size(121, 26);
+            this.cmbStart.Size = new System.Drawing.Size(121, 22);
             this.cmbStart.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbStart.TabIndex = 21;
             // 

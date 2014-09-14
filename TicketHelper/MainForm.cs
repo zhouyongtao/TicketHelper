@@ -12,9 +12,16 @@ namespace TicketHelper
 {
     public partial class MainForm : DevComponents.DotNetBar.Metro.MetroForm
     {
+        private string _loginName;
         public MainForm()
         {
             InitializeComponent();
+        }
+        public MainForm(string loginName)
+        {
+            InitializeComponent();
+            _loginName = loginName;
+            this.HelpButtonText = "当前用户：" + _loginName;
         }
         private void MainForm_Load(object sender, EventArgs e)
         {      //加载城市
