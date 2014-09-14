@@ -50,5 +50,15 @@ namespace TicketHelper.Ticket
 
 
         //https://kyfw.12306.cn/otn/leftTicket/queryT?leftTicketDTO.train_date=2014-09-30&leftTicketDTO.from_station=AOH&leftTicketDTO.to_station=MGH&purpose_codes=ADULT
+
+
+        public static string Say
+        {
+            get
+            {
+                return "我只想做一个安静的美男子";
+            }
+        }
+
     }
 }

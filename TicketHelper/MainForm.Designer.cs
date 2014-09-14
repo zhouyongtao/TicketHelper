@@ -115,7 +115,7 @@
             this.labelX1.Size = new System.Drawing.Size(110, 25);
             this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.labelX1.Symbol = "";
-            this.labelX1.SymbolColor = System.Drawing.Color.SeaGreen;
+            this.labelX1.SymbolColor = System.Drawing.Color.Green;
             this.labelX1.TabIndex = 8;
             this.labelX1.Text = "上车站 :";
             this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -134,7 +134,7 @@
             this.labelX2.Size = new System.Drawing.Size(110, 25);
             this.labelX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.labelX2.Symbol = "";
-            this.labelX2.SymbolColor = System.Drawing.Color.Peru;
+            this.labelX2.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelX2.TabIndex = 10;
             this.labelX2.Text = "到达站 :";
             this.labelX2.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -153,7 +153,7 @@
             this.lblChangeStation.Size = new System.Drawing.Size(32, 25);
             this.lblChangeStation.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.lblChangeStation.Symbol = "";
-            this.lblChangeStation.SymbolColor = System.Drawing.Color.LightSeaGreen;
+            this.lblChangeStation.SymbolColor = System.Drawing.Color.SeaGreen;
             this.lblChangeStation.TabIndex = 12;
             this.lblChangeStation.Click += new System.EventHandler(this.lblChangeStation_Click);
             // 
@@ -246,7 +246,7 @@
             this.btnQuery.Name = "btnQuery";
             this.btnQuery.Size = new System.Drawing.Size(162, 27);
             this.btnQuery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnQuery.Symbol = "";
+            this.btnQuery.Symbol = "";
             this.btnQuery.SymbolColor = System.Drawing.Color.Teal;
             this.btnQuery.TabIndex = 18;
             this.btnQuery.Text = "开始刷票";
@@ -436,7 +436,7 @@
             // 
             this.radialMenuItem4.Name = "radialMenuItem4";
             this.radialMenuItem4.Symbol = "";
-            this.radialMenuItem4.Text = "联系微信";
+            this.radialMenuItem4.Text = "微信求约";
             // 
             // MainForm
             // 
