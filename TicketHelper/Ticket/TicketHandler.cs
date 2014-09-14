@@ -7,14 +7,17 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using TicketHelper.Helper;
+using TicketHelper.Model;
 
 namespace TicketHelper.Ticket
 {
     internal class TicketHandler
     {
-        //设置HttpClientHandler的AutomaticDecompression与cookieContainers
         private readonly static CookieContainer cookieContainers = new CookieContainer();
 
+        #region 初始化并获得验证码
         public static async Task<Image> LoginInitAndGetloginVcode(bool IsFirst = false)
         {
             try
@@ -47,7 +50,9 @@ namespace TicketHelper.Ticket
                 return null;
             }
         }
+        #endregion
 
+        #region 检查验证码
         public static async Task<bool> ChkVerifyCodeAnsyn(string verifyNo)
         {
             try
@@ -78,7 +83,9 @@ namespace TicketHelper.Ticket
                 return false;
             }
         }
+        #endregion
 
+        #region 登陆
         public static async Task<bool> loginVerifyLogin(string userName, string pwd, string verifyNo)
         {
             try
@@ -111,5 +118,39 @@ namespace TicketHelper.Ticket
                 return false;
             }
         }
+        #endregion
+
+
+        public static async Task<LeftTicket> queryleftTicket(string beginDate, string start_station, string end_station, string id_type = "ADULT")
+        {
+            try
+            {
+                var handler = new HttpClientHandler() { CookieContainer = cookieContainers, AllowAutoRedirect = true, AutomaticDecompression = DecompressionMethods.GZip };
+                using (var httpClient = new HttpClient(handler))
+                {
+                    httpClient.DefaultRequestHeaders.Add("Host", "kyfw.12306.cn");
+                    httpClient.DefaultRequestHeaders.Add("Origin", ConstantKey.loginorigin);
+                    httpClient.DefaultRequestHeaders.Add("Referer", ConstantKey.loginRefer);
+                    httpClient.DefaultRequestHeaders.Add("UserAgent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131");
+                    var dict = new Dictionary<string, string>
+                    {
+                        {"beginDate", beginDate},
+                        {"start_station", start_station},
+                        {"end_station", end_station},
+                        {"id_type", id_type}
+                    };
+                    ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, errors) => true;
+                    string url = HttpUtil.ReplaceURL(ConstantKey.queryTicket, dict);
+                    var content = await httpClient.GetStringAsync(url);
+                    if (string.IsNullOrEmpty(content) || !content.Contains("预订")) return null;
+                    return JsonConvert.DeserializeObject<LeftTicket>(content);
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
     }
 }

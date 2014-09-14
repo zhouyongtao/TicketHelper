@@ -7,7 +7,14 @@ using System.Threading.Tasks;
 namespace TicketHelper.Ticket
 {
     public class ConstantKey
-    {   /// <summary>
+    {
+        /*
+            https://kyfw.12306.cn/otn/resources/js/framework/station_name.js
+            https://kyfw.12306.cn/otn/userCommon/allCitys
+            https://kyfw.12306.cn/otn/userCommon/schoolNames
+         */
+
+        /// <summary>
         /// 设置请求的头
         /// </summary>
         public static string loginRefer = @"https://kyfw.12306.cn/otn/login/init";
@@ -35,8 +42,13 @@ namespace TicketHelper.Ticket
         /// 联系人
         /// </summary>
         public static string getPassengerDTOs = @"https://kyfw.12306.cn/otn/confirmPassenger/getPassengerDTOs";
-        //https://kyfw.12306.cn/otn/resources/js/framework/station_name.js
-        //https://kyfw.12306.cn/otn/userCommon/allCitys
-        //https://kyfw.12306.cn/otn/userCommon/schoolNames
+
+        /// <summary>
+        /// 查询余票
+        /// </summary>
+        public static string queryTicket = @"https://kyfw.12306.cn/otn/leftTicket/queryT?leftTicketDTO.train_date=${beginDate}&leftTicketDTO.from_station=${start_station}&leftTicketDTO.to_station=${end_station}&purpose_codes=${id_type}";
+
+
+        //https://kyfw.12306.cn/otn/leftTicket/queryT?leftTicketDTO.train_date=2014-09-30&leftTicketDTO.from_station=AOH&leftTicketDTO.to_station=MGH&purpose_codes=ADULT
     }
 }

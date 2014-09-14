@@ -29,19 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn61 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn62 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn63 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn64 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn65 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            this.superGridControl1 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
+            this.superGridViewForTicket = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.metroStatusBar1 = new DevComponents.DotNetBar.Metro.MetroStatusBar();
             this.lblitem = new DevComponents.DotNetBar.LabelItem();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.dateTimeInput2 = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.dtBookTicketDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.btnQuery = new DevComponents.DotNetBar.ButtonX();
             this.cmbEnd = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.cmbStart = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -60,36 +55,24 @@
             this.checkBoxItem6 = new DevComponents.DotNetBar.CheckBoxItem();
             this.checkBoxItem7 = new DevComponents.DotNetBar.CheckBoxItem();
             this.checkBoxItem8 = new DevComponents.DotNetBar.CheckBoxItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBookTicketDate)).BeginInit();
             this.SuspendLayout();
             // 
-            // superGridControl1
+            // superGridViewForTicket
             // 
-            this.superGridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.superGridViewForTicket.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.superGridControl1.BackColor = System.Drawing.Color.White;
-            this.superGridControl1.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
-            this.superGridControl1.ForeColor = System.Drawing.Color.White;
-            this.superGridControl1.Location = new System.Drawing.Point(-1, 121);
-            this.superGridControl1.Name = "superGridControl1";
-            gridColumn61.Name = "用户名";
-            gridColumn62.Name = "密码";
-            gridColumn63.Name = "火车";
-            gridColumn64.Name = "飞机";
-            gridColumn65.Name = "轮船";
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn61);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn62);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn63);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn64);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn65);
-            this.superGridControl1.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Horizontal;
-            this.superGridControl1.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.RowWithCellHighlight;
-            this.superGridControl1.PrimaryGrid.ShowTreeLines = true;
-            this.superGridControl1.PrimaryGrid.UseAlternateRowStyle = true;
-            this.superGridControl1.Size = new System.Drawing.Size(1066, 333);
-            this.superGridControl1.TabIndex = 3;
-            this.superGridControl1.Text = "superGridControl1";
+            this.superGridViewForTicket.BackColor = System.Drawing.Color.White;
+            this.superGridViewForTicket.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
+            this.superGridViewForTicket.ForeColor = System.Drawing.Color.White;
+            this.superGridViewForTicket.Location = new System.Drawing.Point(-3, 121);
+            this.superGridViewForTicket.Name = "superGridViewForTicket";
+            this.superGridViewForTicket.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Horizontal;
+            this.superGridViewForTicket.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.RowWithCellHighlight;
+            this.superGridViewForTicket.PrimaryGrid.UseAlternateRowStyle = true;
+            this.superGridViewForTicket.Size = new System.Drawing.Size(1049, 400);
+            this.superGridViewForTicket.TabIndex = 3;
             // 
             // metroStatusBar1
             // 
@@ -107,7 +90,7 @@
             this.lblitem});
             this.metroStatusBar1.Location = new System.Drawing.Point(0, 517);
             this.metroStatusBar1.Name = "metroStatusBar1";
-            this.metroStatusBar1.Size = new System.Drawing.Size(1063, 16);
+            this.metroStatusBar1.Size = new System.Drawing.Size(1046, 16);
             this.metroStatusBar1.TabIndex = 5;
             this.metroStatusBar1.Text = "metroStatusBar1";
             // 
@@ -190,64 +173,64 @@
             this.labelX4.Text = "日期 :";
             this.labelX4.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // dateTimeInput2
+            // dtBookTicketDate
             // 
-            this.dateTimeInput2.AllowEmptyState = false;
-            this.dateTimeInput2.AutoAdvance = true;
-            this.dateTimeInput2.AutoOverwrite = false;
-            this.dateTimeInput2.AutoSelectDate = true;
-            this.dateTimeInput2.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.dateTimeInput2.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dateTimeInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeInput2.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.dateTimeInput2.ButtonDropDown.Visible = true;
-            this.dateTimeInput2.DefaultInputValues = false;
-            this.dateTimeInput2.DisabledBackColor = System.Drawing.Color.Gray;
-            this.dateTimeInput2.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dateTimeInput2.ForeColor = System.Drawing.Color.Black;
-            this.dateTimeInput2.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Center;
-            this.dateTimeInput2.InputMouseWheelEnabled = false;
-            this.dateTimeInput2.IsPopupCalendarOpen = false;
-            this.dateTimeInput2.Location = new System.Drawing.Point(684, 30);
+            this.dtBookTicketDate.AllowEmptyState = false;
+            this.dtBookTicketDate.AutoAdvance = true;
+            this.dtBookTicketDate.AutoOverwrite = false;
+            this.dtBookTicketDate.AutoSelectDate = true;
+            this.dtBookTicketDate.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
-            this.dateTimeInput2.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            this.dtBookTicketDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dtBookTicketDate.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dtBookTicketDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.dtBookTicketDate.ButtonDropDown.Visible = true;
+            this.dtBookTicketDate.DefaultInputValues = false;
+            this.dtBookTicketDate.DisabledBackColor = System.Drawing.Color.Gray;
+            this.dtBookTicketDate.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtBookTicketDate.ForeColor = System.Drawing.Color.Black;
+            this.dtBookTicketDate.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Center;
+            this.dtBookTicketDate.InputMouseWheelEnabled = false;
+            this.dtBookTicketDate.IsPopupCalendarOpen = false;
+            this.dtBookTicketDate.Location = new System.Drawing.Point(684, 30);
             // 
             // 
             // 
-            this.dateTimeInput2.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeInput2.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dateTimeInput2.MonthCalendar.ClearButtonVisible = true;
+            this.dtBookTicketDate.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
             // 
             // 
             // 
-            this.dateTimeInput2.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.dateTimeInput2.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.dateTimeInput2.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.dateTimeInput2.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dateTimeInput2.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.dateTimeInput2.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.dateTimeInput2.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeInput2.MonthCalendar.DisplayMonth = new System.DateTime(2014, 9, 1, 0, 0, 0, 0);
-            this.dateTimeInput2.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.dateTimeInput2.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            this.dtBookTicketDate.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dtBookTicketDate.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.dtBookTicketDate.MonthCalendar.ClearButtonVisible = true;
             // 
             // 
             // 
-            this.dateTimeInput2.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.dateTimeInput2.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.dateTimeInput2.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.dateTimeInput2.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dateTimeInput2.MonthCalendar.TodayButtonVisible = true;
-            this.dateTimeInput2.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
-            this.dateTimeInput2.Name = "dateTimeInput2";
-            this.dateTimeInput2.Size = new System.Drawing.Size(120, 22);
-            this.dateTimeInput2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dateTimeInput2.TabIndex = 17;
+            this.dtBookTicketDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.dtBookTicketDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.dtBookTicketDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.dtBookTicketDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.dtBookTicketDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.dtBookTicketDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dtBookTicketDate.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dtBookTicketDate.MonthCalendar.DisplayMonth = new System.DateTime(2014, 9, 1, 0, 0, 0, 0);
+            this.dtBookTicketDate.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.dtBookTicketDate.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.dtBookTicketDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.dtBookTicketDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.dtBookTicketDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dtBookTicketDate.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.dtBookTicketDate.MonthCalendar.TodayButtonVisible = true;
+            this.dtBookTicketDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
+            this.dtBookTicketDate.Name = "dtBookTicketDate";
+            this.dtBookTicketDate.Size = new System.Drawing.Size(120, 22);
+            this.dtBookTicketDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.dtBookTicketDate.TabIndex = 17;
             // 
             // btnQuery
             // 
@@ -258,7 +241,7 @@
             this.btnQuery.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuery.Location = new System.Drawing.Point(820, 28);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(180, 26);
+            this.btnQuery.Size = new System.Drawing.Size(163, 26);
             this.btnQuery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnQuery.Symbol = "";
             this.btnQuery.SymbolColor = System.Drawing.Color.Teal;
@@ -298,16 +281,19 @@
             // 
             // tabStrip1
             // 
+            this.tabStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabStrip1.AutoSelectAttachedControl = true;
             this.tabStrip1.CanReorderTabs = true;
             this.tabStrip1.CloseButtonVisible = true;
             this.tabStrip1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabStrip1.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabStrip1.ForeColor = System.Drawing.Color.White;
             this.tabStrip1.Location = new System.Drawing.Point(0, 95);
             this.tabStrip1.Name = "tabStrip1";
             this.tabStrip1.SelectedTab = this.tabItem4;
-            this.tabStrip1.Size = new System.Drawing.Size(1063, 27);
-            this.tabStrip1.Style = DevComponents.DotNetBar.eTabStripStyle.Metro;
+            this.tabStrip1.Size = new System.Drawing.Size(1046, 27);
+            this.tabStrip1.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
             this.tabStrip1.TabIndex = 22;
             this.tabStrip1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.MultilineNoNavigationBox;
             this.tabStrip1.Tabs.Add(this.谢谢);
@@ -319,28 +305,27 @@
             // 谢谢
             // 
             this.谢谢.Name = "谢谢";
-            this.谢谢.Text = "星期一 2015-05-10";
+            this.谢谢.Text = " 2015-05-10  星期一";
             // 
             // tabItem2
             // 
             this.tabItem2.Name = "tabItem2";
-            this.tabItem2.Text = "星期一 2015-05-10";
+            this.tabItem2.Text = " 2015-05-10  星期二";
             // 
             // tabItem3
             // 
             this.tabItem3.Name = "tabItem3";
-            this.tabItem3.Text = "星期一 2015-05-10";
+            this.tabItem3.Text = " 2015-05-10  星期三";
             // 
             // tabItem4
             // 
             this.tabItem4.Name = "tabItem4";
-            this.tabItem4.Text = "星期一 2015-05-10";
+            this.tabItem4.Text = " 2015-05-10  星期四";
             // 
             // metroToolbar1
             // 
             this.metroToolbar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroToolbar1.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
@@ -348,8 +333,8 @@
             this.metroToolbar1.ContainerControlProcessDialogKey = true;
             this.metroToolbar1.DragDropSupport = true;
             this.metroToolbar1.ExpandButtonVisible = false;
-            this.metroToolbar1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroToolbar1.ForeColor = System.Drawing.Color.Gray;
+            this.metroToolbar1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
+            this.metroToolbar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.metroToolbar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.labelItem1,
             this.checkBoxItem1,
@@ -360,12 +345,11 @@
             this.checkBoxItem6,
             this.checkBoxItem7,
             this.checkBoxItem8});
-            this.metroToolbar1.Location = new System.Drawing.Point(50, 72);
+            this.metroToolbar1.Location = new System.Drawing.Point(46, 72);
             this.metroToolbar1.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.metroToolbar1.Name = "metroToolbar1";
-            this.metroToolbar1.Size = new System.Drawing.Size(514, 22);
+            this.metroToolbar1.Size = new System.Drawing.Size(497, 22);
             this.metroToolbar1.TabIndex = 23;
-            this.metroToolbar1.Text = "metroToolbar1";
             // 
             // labelItem1
             // 
@@ -416,19 +400,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 533);
+            this.ClientSize = new System.Drawing.Size(1046, 533);
             this.Controls.Add(this.metroToolbar1);
             this.Controls.Add(this.tabStrip1);
             this.Controls.Add(this.cmbStart);
             this.Controls.Add(this.cmbEnd);
             this.Controls.Add(this.btnQuery);
-            this.Controls.Add(this.dateTimeInput2);
+            this.Controls.Add(this.dtBookTicketDate);
             this.Controls.Add(this.labelX4);
             this.Controls.Add(this.labelX3);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.labelX1);
             this.Controls.Add(this.metroStatusBar1);
-            this.Controls.Add(this.superGridControl1);
+            this.Controls.Add(this.superGridViewForTicket);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -440,21 +424,21 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtBookTicketDate)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevComponents.DotNetBar.SuperGrid.SuperGridControl superGridControl1;
+        private DevComponents.DotNetBar.SuperGrid.SuperGridControl superGridViewForTicket;
         private DevComponents.DotNetBar.Metro.MetroStatusBar metroStatusBar1;
         private DevComponents.DotNetBar.LabelItem lblitem;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX4;
-        private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeInput2;
+        private DevComponents.Editors.DateTimeAdv.DateTimeInput dtBookTicketDate;
         private DevComponents.DotNetBar.ButtonX btnQuery;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbEnd;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbStart;

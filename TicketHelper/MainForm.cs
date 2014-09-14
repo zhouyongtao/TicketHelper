@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using TicketHelper.Ticket;
+using TicketHelper.Model;
 
 namespace TicketHelper
 {
@@ -24,9 +25,8 @@ namespace TicketHelper
             this.HelpButtonText = "当前用户：" + _loginName;
         }
         private void MainForm_Load(object sender, EventArgs e)
-        {      //加载城市
-
-
+        {
+            //加载城市
             this.cmbStart.DisplayMember = "CityName";
             this.cmbStart.ValueMember = "CityCode";
             this.cmbStart.AutoCompleteSource = AutoCompleteSource.ListItems;
@@ -47,9 +47,10 @@ namespace TicketHelper
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnQuery_Click(object sender, EventArgs e)
+        async private void btnQuery_Click(object sender, EventArgs e)
         {
-
+            if (this.dtBookTicketDate.Text.IsEmpty() || this.cmbStart.SelectedValue.IsNull() || this.cmbEnd.SelectedValue.IsNull()) return;
+            var data = await TicketHandler.queryleftTicket(Convert.ToDateTime((this.dtBookTicketDate.Text)).ToString("yyyy-MM-dd"), this.cmbStart.SelectedValue.ToString(), this.cmbEnd.SelectedValue.ToString());
         }
     }
 }
