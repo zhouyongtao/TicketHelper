@@ -52,6 +52,11 @@
             this.checkBoxItem6 = new DevComponents.DotNetBar.CheckBoxItem();
             this.checkBoxItem7 = new DevComponents.DotNetBar.CheckBoxItem();
             this.checkBoxItem8 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.radialMenu1 = new DevComponents.DotNetBar.RadialMenu();
+            this.radialMenuItem1 = new DevComponents.DotNetBar.RadialMenuItem();
+            this.radialMenuItem3 = new DevComponents.DotNetBar.RadialMenuItem();
+            this.radialMenuItem2 = new DevComponents.DotNetBar.RadialMenuItem();
+            this.radialMenuItem4 = new DevComponents.DotNetBar.RadialMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dtBookTicketDate)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,7 +110,7 @@
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(45, 29);
+            this.labelX1.Location = new System.Drawing.Point(67, 29);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(110, 25);
             this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -124,7 +129,7 @@
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(330, 28);
+            this.labelX2.Location = new System.Drawing.Point(352, 28);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(110, 25);
             this.labelX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -143,7 +148,7 @@
             this.lblChangeStation.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblChangeStation.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChangeStation.ForeColor = System.Drawing.Color.Black;
-            this.lblChangeStation.Location = new System.Drawing.Point(293, 27);
+            this.lblChangeStation.Location = new System.Drawing.Point(315, 27);
             this.lblChangeStation.Name = "lblChangeStation";
             this.lblChangeStation.Size = new System.Drawing.Size(32, 25);
             this.lblChangeStation.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -161,7 +166,7 @@
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX4.ForeColor = System.Drawing.Color.Black;
-            this.labelX4.Location = new System.Drawing.Point(586, 28);
+            this.labelX4.Location = new System.Drawing.Point(608, 28);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(95, 25);
             this.labelX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -192,7 +197,7 @@
             this.dtBookTicketDate.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Center;
             this.dtBookTicketDate.InputMouseWheelEnabled = false;
             this.dtBookTicketDate.IsPopupCalendarOpen = false;
-            this.dtBookTicketDate.Location = new System.Drawing.Point(689, 30);
+            this.dtBookTicketDate.Location = new System.Drawing.Point(711, 30);
             // 
             // 
             // 
@@ -237,9 +242,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnQuery.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnQuery.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuery.Location = new System.Drawing.Point(836, 27);
+            this.btnQuery.Location = new System.Drawing.Point(854, 27);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(162, 26);
+            this.btnQuery.Size = new System.Drawing.Size(162, 27);
             this.btnQuery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnQuery.Symbol = "";
             this.btnQuery.SymbolColor = System.Drawing.Color.Teal;
@@ -255,7 +260,7 @@
             this.cmbEnd.ForeColor = System.Drawing.Color.Black;
             this.cmbEnd.FormattingEnabled = true;
             this.cmbEnd.ItemHeight = 20;
-            this.cmbEnd.Location = new System.Drawing.Point(447, 28);
+            this.cmbEnd.Location = new System.Drawing.Point(469, 28);
             this.cmbEnd.Name = "cmbEnd";
             this.cmbEnd.PreventEnterBeep = true;
             this.cmbEnd.Size = new System.Drawing.Size(121, 26);
@@ -269,7 +274,7 @@
             this.cmbStart.ForeColor = System.Drawing.Color.Black;
             this.cmbStart.FormattingEnabled = true;
             this.cmbStart.ItemHeight = 20;
-            this.cmbStart.Location = new System.Drawing.Point(161, 28);
+            this.cmbStart.Location = new System.Drawing.Point(183, 28);
             this.cmbStart.Name = "cmbStart";
             this.cmbStart.PreventEnterBeep = true;
             this.cmbStart.Size = new System.Drawing.Size(121, 26);
@@ -392,11 +397,53 @@
             this.checkBoxItem8.Name = "checkBoxItem8";
             this.checkBoxItem8.Text = "学生票";
             // 
+            // radialMenu1
+            // 
+            this.radialMenu1.BackColor = System.Drawing.Color.White;
+            this.radialMenu1.ForeColor = System.Drawing.Color.Black;
+            this.radialMenu1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.radialMenuItem1,
+            this.radialMenuItem3,
+            this.radialMenuItem2,
+            this.radialMenuItem4});
+            this.radialMenu1.Location = new System.Drawing.Point(12, -1);
+            this.radialMenu1.Name = "radialMenu1";
+            this.radialMenu1.Size = new System.Drawing.Size(28, 28);
+            this.radialMenu1.Symbol = "";
+            this.radialMenu1.SymbolSize = 13F;
+            this.radialMenu1.TabIndex = 24;
+            this.radialMenu1.Text = "radialMenu1";
+            // 
+            // radialMenuItem1
+            // 
+            this.radialMenuItem1.Name = "radialMenuItem1";
+            this.radialMenuItem1.Symbol = "";
+            this.radialMenuItem1.Text = "我的订单";
+            // 
+            // radialMenuItem3
+            // 
+            this.radialMenuItem3.Name = "radialMenuItem3";
+            this.radialMenuItem3.Symbol = "";
+            this.radialMenuItem3.Text = "分享";
+            // 
+            // radialMenuItem2
+            // 
+            this.radialMenuItem2.Name = "radialMenuItem2";
+            this.radialMenuItem2.Symbol = "";
+            this.radialMenuItem2.Text = "设置";
+            // 
+            // radialMenuItem4
+            // 
+            this.radialMenuItem4.Name = "radialMenuItem4";
+            this.radialMenuItem4.Symbol = "";
+            this.radialMenuItem4.Text = "联系微信";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 533);
+            this.Controls.Add(this.radialMenu1);
             this.Controls.Add(this.metroToolbar1);
             this.Controls.Add(this.tbstripMenu);
             this.Controls.Add(this.cmbStart);
@@ -451,5 +498,10 @@
         private DevComponents.DotNetBar.CheckBoxItem checkBoxItem7;
         private DevComponents.DotNetBar.CheckBoxItem checkBoxItem8;
         private DevComponents.DotNetBar.TabItem tabItem1;
+        private DevComponents.DotNetBar.RadialMenu radialMenu1;
+        private DevComponents.DotNetBar.RadialMenuItem radialMenuItem1;
+        private DevComponents.DotNetBar.RadialMenuItem radialMenuItem3;
+        private DevComponents.DotNetBar.RadialMenuItem radialMenuItem2;
+        private DevComponents.DotNetBar.RadialMenuItem radialMenuItem4;
     }
 }
