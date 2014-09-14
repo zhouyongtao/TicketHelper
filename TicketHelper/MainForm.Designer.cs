@@ -291,7 +291,7 @@
             this.tabStrip1.ForeColor = System.Drawing.Color.White;
             this.tabStrip1.Location = new System.Drawing.Point(0, 95);
             this.tabStrip1.Name = "tabStrip1";
-            this.tabStrip1.SelectedTab = this.tabItem4;
+            this.tabStrip1.SelectedTab = this.谢谢;
             this.tabStrip1.Size = new System.Drawing.Size(1046, 27);
             this.tabStrip1.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
             this.tabStrip1.TabIndex = 22;
@@ -348,7 +348,7 @@
             this.metroToolbar1.Location = new System.Drawing.Point(46, 72);
             this.metroToolbar1.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.metroToolbar1.Name = "metroToolbar1";
-            this.metroToolbar1.Size = new System.Drawing.Size(497, 22);
+            this.metroToolbar1.Size = new System.Drawing.Size(522, 22);
             this.metroToolbar1.TabIndex = 23;
             // 
             // labelItem1
@@ -416,7 +416,6 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.HelpButtonText = "当前用户：周永涛";
             this.HelpButtonVisible = true;
             this.MinimizeBox = false;
             this.Name = "MainForm";
