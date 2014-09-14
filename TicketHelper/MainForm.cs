@@ -40,8 +40,18 @@ namespace TicketHelper
             this.cmbEnd.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             this.cmbEnd.DataSource = CityHandler.GetCityData();
             this.cmbEnd.Text = "北京";
+            //加载菜单
+
+            this.tbstripMenu.Tabs.Add(new TabItem()
+            {
+
+              
+            });
+
 
         }
+
+
         /// <summary>
         /// 查询车次
         /// </summary>

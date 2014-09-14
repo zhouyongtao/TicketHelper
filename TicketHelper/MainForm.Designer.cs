@@ -40,7 +40,7 @@
             this.btnQuery = new DevComponents.DotNetBar.ButtonX();
             this.cmbEnd = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.cmbStart = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.tabStrip1 = new DevComponents.DotNetBar.TabStrip();
+            this.tbstripMenu = new DevComponents.DotNetBar.TabStrip();
             this.谢谢 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
@@ -127,7 +127,7 @@
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(330, 26);
+            this.labelX2.Location = new System.Drawing.Point(330, 27);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(110, 25);
             this.labelX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -257,11 +257,11 @@
             this.cmbEnd.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbEnd.ForeColor = System.Drawing.Color.Black;
             this.cmbEnd.FormattingEnabled = true;
-            this.cmbEnd.ItemHeight = 16;
-            this.cmbEnd.Location = new System.Drawing.Point(447, 29);
+            this.cmbEnd.ItemHeight = 20;
+            this.cmbEnd.Location = new System.Drawing.Point(447, 28);
             this.cmbEnd.Name = "cmbEnd";
             this.cmbEnd.PreventEnterBeep = true;
-            this.cmbEnd.Size = new System.Drawing.Size(121, 22);
+            this.cmbEnd.Size = new System.Drawing.Size(121, 26);
             this.cmbEnd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbEnd.TabIndex = 20;
             // 
@@ -269,40 +269,39 @@
             // 
             this.cmbStart.DisplayMember = "Text";
             this.cmbStart.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbStart.ForeColor = System.Drawing.Color.Black;
             this.cmbStart.FormattingEnabled = true;
-            this.cmbStart.ItemHeight = 16;
-            this.cmbStart.Location = new System.Drawing.Point(162, 29);
+            this.cmbStart.ItemHeight = 20;
+            this.cmbStart.Location = new System.Drawing.Point(162, 28);
             this.cmbStart.Name = "cmbStart";
             this.cmbStart.PreventEnterBeep = true;
-            this.cmbStart.Size = new System.Drawing.Size(121, 22);
+            this.cmbStart.Size = new System.Drawing.Size(121, 26);
             this.cmbStart.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbStart.TabIndex = 21;
             // 
-            // tabStrip1
+            // tbstripMenu
             // 
-            this.tabStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tbstripMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabStrip1.AutoSelectAttachedControl = true;
-            this.tabStrip1.CanReorderTabs = true;
-            this.tabStrip1.CloseButtonVisible = true;
-            this.tabStrip1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tabStrip1.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabStrip1.ForeColor = System.Drawing.Color.Black;
-            this.tabStrip1.Location = new System.Drawing.Point(0, 95);
-            this.tabStrip1.Name = "tabStrip1";
-            this.tabStrip1.SelectedTab = this.谢谢;
-            this.tabStrip1.SelectedTabFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
-            this.tabStrip1.Size = new System.Drawing.Size(1046, 27);
-            this.tabStrip1.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
-            this.tabStrip1.TabIndex = 22;
-            this.tabStrip1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.MultilineNoNavigationBox;
-            this.tabStrip1.Tabs.Add(this.谢谢);
-            this.tabStrip1.Tabs.Add(this.tabItem2);
-            this.tabStrip1.Tabs.Add(this.tabItem3);
-            this.tabStrip1.Tabs.Add(this.tabItem4);
-            this.tabStrip1.Text = "tabStrip1";
+            this.tbstripMenu.AutoSelectAttachedControl = true;
+            this.tbstripMenu.CanReorderTabs = true;
+            this.tbstripMenu.CloseButtonVisible = true;
+            this.tbstripMenu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tbstripMenu.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbstripMenu.ForeColor = System.Drawing.Color.Black;
+            this.tbstripMenu.Location = new System.Drawing.Point(0, 95);
+            this.tbstripMenu.Name = "tbstripMenu";
+            this.tbstripMenu.SelectedTab = this.tabItem4;
+            this.tbstripMenu.SelectedTabFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
+            this.tbstripMenu.Size = new System.Drawing.Size(1046, 27);
+            this.tbstripMenu.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
+            this.tbstripMenu.TabIndex = 22;
+            this.tbstripMenu.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.MultilineNoNavigationBox;
+            this.tbstripMenu.Tabs.Add(this.谢谢);
+            this.tbstripMenu.Tabs.Add(this.tabItem2);
+            this.tbstripMenu.Tabs.Add(this.tabItem3);
+            this.tbstripMenu.Tabs.Add(this.tabItem4);
+            this.tbstripMenu.Text = "tabStrip1";
             // 
             // 谢谢
             // 
@@ -405,7 +404,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 533);
             this.Controls.Add(this.metroToolbar1);
-            this.Controls.Add(this.tabStrip1);
+            this.Controls.Add(this.tbstripMenu);
             this.Controls.Add(this.cmbStart);
             this.Controls.Add(this.cmbEnd);
             this.Controls.Add(this.btnQuery);
@@ -445,7 +444,7 @@
         private DevComponents.DotNetBar.ButtonX btnQuery;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbEnd;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbStart;
-        private DevComponents.DotNetBar.TabStrip tabStrip1;
+        private DevComponents.DotNetBar.TabStrip tbstripMenu;
         private DevComponents.DotNetBar.TabItem 谢谢;
         private DevComponents.DotNetBar.TabItem tabItem2;
         private DevComponents.DotNetBar.TabItem tabItem3;
