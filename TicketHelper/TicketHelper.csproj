@@ -98,6 +98,7 @@
     <Compile Include="Ticket\CityHandler.cs" />
     <Compile Include="Ticket\ConstantKey.cs" />
     <Compile Include="Ticket\TicketHandler.cs" />
+    <Compile Include="Ticket\WeekDayHandler.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
