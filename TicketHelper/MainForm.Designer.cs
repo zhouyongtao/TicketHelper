@@ -110,7 +110,7 @@
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(67, 29);
+            this.labelX1.Location = new System.Drawing.Point(67, 28);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(110, 25);
             this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
