@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn66 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn67 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn68 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn69 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn70 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            this.components = new System.ComponentModel.Container();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn36 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn37 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn38 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn39 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn40 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             this.superGridControl1 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.metroStatusBar1 = new DevComponents.DotNetBar.Metro.MetroStatusBar();
             this.lblitem = new DevComponents.DotNetBar.LabelItem();
@@ -44,6 +45,21 @@
             this.btnQuery = new DevComponents.DotNetBar.ButtonX();
             this.cmbEnd = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.cmbStart = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.tabStrip1 = new DevComponents.DotNetBar.TabStrip();
+            this.谢谢 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItem4 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.metroToolbar1 = new DevComponents.DotNetBar.Metro.MetroToolbar();
+            this.labelItem1 = new DevComponents.DotNetBar.LabelItem();
+            this.checkBoxItem1 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.checkBoxItem2 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.checkBoxItem3 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.checkBoxItem4 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.checkBoxItem5 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.checkBoxItem6 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.checkBoxItem7 = new DevComponents.DotNetBar.CheckBoxItem();
+            this.checkBoxItem8 = new DevComponents.DotNetBar.CheckBoxItem();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInput2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,24 +70,24 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.superGridControl1.BackColor = System.Drawing.Color.White;
             this.superGridControl1.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
-            this.superGridControl1.ForeColor = System.Drawing.Color.Black;
-            this.superGridControl1.Location = new System.Drawing.Point(-2, 123);
+            this.superGridControl1.ForeColor = System.Drawing.Color.White;
+            this.superGridControl1.Location = new System.Drawing.Point(-1, 121);
             this.superGridControl1.Name = "superGridControl1";
-            gridColumn66.Name = "用户名";
-            gridColumn67.Name = "密码";
-            gridColumn68.Name = "火车";
-            gridColumn69.Name = "飞机";
-            gridColumn70.Name = "轮船";
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn66);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn67);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn68);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn69);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn70);
+            gridColumn36.Name = "用户名";
+            gridColumn37.Name = "密码";
+            gridColumn38.Name = "火车";
+            gridColumn39.Name = "飞机";
+            gridColumn40.Name = "轮船";
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn36);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn37);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn38);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn39);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn40);
             this.superGridControl1.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Horizontal;
             this.superGridControl1.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.RowWithCellHighlight;
             this.superGridControl1.PrimaryGrid.ShowTreeLines = true;
             this.superGridControl1.PrimaryGrid.UseAlternateRowStyle = true;
-            this.superGridControl1.Size = new System.Drawing.Size(1066, 398);
+            this.superGridControl1.Size = new System.Drawing.Size(1066, 333);
             this.superGridControl1.TabIndex = 3;
             this.superGridControl1.Text = "superGridControl1";
             // 
@@ -128,7 +144,7 @@
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(326, 28);
+            this.labelX2.Location = new System.Drawing.Point(330, 28);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(110, 25);
             this.labelX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -164,7 +180,7 @@
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX4.ForeColor = System.Drawing.Color.Black;
-            this.labelX4.Location = new System.Drawing.Point(577, 27);
+            this.labelX4.Location = new System.Drawing.Point(581, 27);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(95, 25);
             this.labelX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -195,7 +211,7 @@
             this.dateTimeInput2.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Center;
             this.dateTimeInput2.InputMouseWheelEnabled = false;
             this.dateTimeInput2.IsPopupCalendarOpen = false;
-            this.dateTimeInput2.Location = new System.Drawing.Point(680, 30);
+            this.dateTimeInput2.Location = new System.Drawing.Point(684, 30);
             // 
             // 
             // 
@@ -240,9 +256,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnQuery.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnQuery.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuery.Location = new System.Drawing.Point(816, 28);
+            this.btnQuery.Location = new System.Drawing.Point(820, 28);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(191, 26);
+            this.btnQuery.Size = new System.Drawing.Size(180, 26);
             this.btnQuery.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnQuery.Symbol = "";
             this.btnQuery.SymbolColor = System.Drawing.Color.Teal;
@@ -258,7 +274,7 @@
             this.cmbEnd.ForeColor = System.Drawing.Color.Black;
             this.cmbEnd.FormattingEnabled = true;
             this.cmbEnd.ItemHeight = 16;
-            this.cmbEnd.Location = new System.Drawing.Point(443, 29);
+            this.cmbEnd.Location = new System.Drawing.Point(447, 29);
             this.cmbEnd.Name = "cmbEnd";
             this.cmbEnd.PreventEnterBeep = true;
             this.cmbEnd.Size = new System.Drawing.Size(121, 22);
@@ -280,11 +296,129 @@
             this.cmbStart.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbStart.TabIndex = 21;
             // 
+            // tabStrip1
+            // 
+            this.tabStrip1.AutoSelectAttachedControl = true;
+            this.tabStrip1.CanReorderTabs = true;
+            this.tabStrip1.CloseButtonVisible = true;
+            this.tabStrip1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabStrip1.ForeColor = System.Drawing.Color.White;
+            this.tabStrip1.Location = new System.Drawing.Point(0, 95);
+            this.tabStrip1.Name = "tabStrip1";
+            this.tabStrip1.SelectedTab = this.tabItem4;
+            this.tabStrip1.Size = new System.Drawing.Size(1063, 27);
+            this.tabStrip1.Style = DevComponents.DotNetBar.eTabStripStyle.Metro;
+            this.tabStrip1.TabIndex = 22;
+            this.tabStrip1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.MultilineNoNavigationBox;
+            this.tabStrip1.Tabs.Add(this.谢谢);
+            this.tabStrip1.Tabs.Add(this.tabItem2);
+            this.tabStrip1.Tabs.Add(this.tabItem3);
+            this.tabStrip1.Tabs.Add(this.tabItem4);
+            this.tabStrip1.Text = "tabStrip1";
+            // 
+            // 谢谢
+            // 
+            this.谢谢.Name = "谢谢";
+            this.谢谢.Text = "星期一 2015-05-10";
+            // 
+            // tabItem2
+            // 
+            this.tabItem2.Name = "tabItem2";
+            this.tabItem2.Text = "星期一 2015-05-10";
+            // 
+            // tabItem3
+            // 
+            this.tabItem3.Name = "tabItem3";
+            this.tabItem3.Text = "星期一 2015-05-10";
+            // 
+            // tabItem4
+            // 
+            this.tabItem4.Name = "tabItem4";
+            this.tabItem4.Text = "星期一 2015-05-10";
+            // 
+            // metroToolbar1
+            // 
+            this.metroToolbar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroToolbar1.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.metroToolbar1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroToolbar1.ContainerControlProcessDialogKey = true;
+            this.metroToolbar1.DragDropSupport = true;
+            this.metroToolbar1.ExpandButtonVisible = false;
+            this.metroToolbar1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroToolbar1.ForeColor = System.Drawing.Color.Gray;
+            this.metroToolbar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.labelItem1,
+            this.checkBoxItem1,
+            this.checkBoxItem2,
+            this.checkBoxItem3,
+            this.checkBoxItem4,
+            this.checkBoxItem5,
+            this.checkBoxItem6,
+            this.checkBoxItem7,
+            this.checkBoxItem8});
+            this.metroToolbar1.Location = new System.Drawing.Point(50, 72);
+            this.metroToolbar1.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
+            this.metroToolbar1.Name = "metroToolbar1";
+            this.metroToolbar1.Size = new System.Drawing.Size(514, 22);
+            this.metroToolbar1.TabIndex = 23;
+            this.metroToolbar1.Text = "metroToolbar1";
+            // 
+            // labelItem1
+            // 
+            this.labelItem1.Name = "labelItem1";
+            this.labelItem1.Text = "车次类型";
+            // 
+            // checkBoxItem1
+            // 
+            this.checkBoxItem1.Name = "checkBoxItem1";
+            this.checkBoxItem1.Text = "全部";
+            // 
+            // checkBoxItem2
+            // 
+            this.checkBoxItem2.Name = "checkBoxItem2";
+            this.checkBoxItem2.Text = "D字头";
+            // 
+            // checkBoxItem3
+            // 
+            this.checkBoxItem3.Name = "checkBoxItem3";
+            this.checkBoxItem3.Text = "G字头";
+            // 
+            // checkBoxItem4
+            // 
+            this.checkBoxItem4.Name = "checkBoxItem4";
+            this.checkBoxItem4.Text = "Z字头";
+            // 
+            // checkBoxItem5
+            // 
+            this.checkBoxItem5.Name = "checkBoxItem5";
+            this.checkBoxItem5.Text = "T字头";
+            // 
+            // checkBoxItem6
+            // 
+            this.checkBoxItem6.Name = "checkBoxItem6";
+            this.checkBoxItem6.Text = "K字头";
+            // 
+            // checkBoxItem7
+            // 
+            this.checkBoxItem7.Name = "checkBoxItem7";
+            this.checkBoxItem7.Text = "其他";
+            // 
+            // checkBoxItem8
+            // 
+            this.checkBoxItem8.Name = "checkBoxItem8";
+            this.checkBoxItem8.Text = "学生票";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 533);
+            this.Controls.Add(this.metroToolbar1);
+            this.Controls.Add(this.tabStrip1);
             this.Controls.Add(this.cmbStart);
             this.Controls.Add(this.cmbEnd);
             this.Controls.Add(this.btnQuery);
@@ -324,5 +458,20 @@
         private DevComponents.DotNetBar.ButtonX btnQuery;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbEnd;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbStart;
+        private DevComponents.DotNetBar.TabStrip tabStrip1;
+        private DevComponents.DotNetBar.TabItem 谢谢;
+        private DevComponents.DotNetBar.TabItem tabItem2;
+        private DevComponents.DotNetBar.TabItem tabItem3;
+        private DevComponents.DotNetBar.TabItem tabItem4;
+        private DevComponents.DotNetBar.Metro.MetroToolbar metroToolbar1;
+        private DevComponents.DotNetBar.LabelItem labelItem1;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem1;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem2;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem3;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem4;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem5;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem6;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem7;
+        private DevComponents.DotNetBar.CheckBoxItem checkBoxItem8;
     }
 }
