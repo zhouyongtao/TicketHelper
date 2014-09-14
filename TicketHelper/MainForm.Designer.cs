@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn36 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn37 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn38 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn39 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn40 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn61 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn62 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn63 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn64 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+            DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn65 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
             this.superGridControl1 = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.metroStatusBar1 = new DevComponents.DotNetBar.Metro.MetroStatusBar();
             this.lblitem = new DevComponents.DotNetBar.LabelItem();
@@ -73,16 +73,16 @@
             this.superGridControl1.ForeColor = System.Drawing.Color.White;
             this.superGridControl1.Location = new System.Drawing.Point(-1, 121);
             this.superGridControl1.Name = "superGridControl1";
-            gridColumn36.Name = "用户名";
-            gridColumn37.Name = "密码";
-            gridColumn38.Name = "火车";
-            gridColumn39.Name = "飞机";
-            gridColumn40.Name = "轮船";
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn36);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn37);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn38);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn39);
-            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn40);
+            gridColumn61.Name = "用户名";
+            gridColumn62.Name = "密码";
+            gridColumn63.Name = "火车";
+            gridColumn64.Name = "飞机";
+            gridColumn65.Name = "轮船";
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn61);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn62);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn63);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn64);
+            this.superGridControl1.PrimaryGrid.Columns.Add(gridColumn65);
             this.superGridControl1.PrimaryGrid.GridLines = DevComponents.DotNetBar.SuperGrid.GridLines.Horizontal;
             this.superGridControl1.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.RowWithCellHighlight;
             this.superGridControl1.PrimaryGrid.ShowTreeLines = true;
@@ -144,7 +144,7 @@
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(330, 28);
+            this.labelX2.Location = new System.Drawing.Point(330, 26);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(110, 25);
             this.labelX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -180,7 +180,7 @@
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX4.ForeColor = System.Drawing.Color.Black;
-            this.labelX4.Location = new System.Drawing.Point(581, 27);
+            this.labelX4.Location = new System.Drawing.Point(583, 27);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(95, 25);
             this.labelX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
