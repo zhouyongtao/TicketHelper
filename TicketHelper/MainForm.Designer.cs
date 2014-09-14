@@ -105,7 +105,7 @@
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(46, 29);
+            this.labelX1.Location = new System.Drawing.Point(45, 29);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(110, 25);
             this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
@@ -254,11 +254,11 @@
             this.cmbEnd.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbEnd.ForeColor = System.Drawing.Color.Black;
             this.cmbEnd.FormattingEnabled = true;
-            this.cmbEnd.ItemHeight = 16;
-            this.cmbEnd.Location = new System.Drawing.Point(447, 29);
+            this.cmbEnd.ItemHeight = 20;
+            this.cmbEnd.Location = new System.Drawing.Point(447, 28);
             this.cmbEnd.Name = "cmbEnd";
             this.cmbEnd.PreventEnterBeep = true;
-            this.cmbEnd.Size = new System.Drawing.Size(121, 22);
+            this.cmbEnd.Size = new System.Drawing.Size(121, 26);
             this.cmbEnd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbEnd.TabIndex = 20;
             // 
@@ -268,11 +268,11 @@
             this.cmbStart.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbStart.ForeColor = System.Drawing.Color.Black;
             this.cmbStart.FormattingEnabled = true;
-            this.cmbStart.ItemHeight = 16;
-            this.cmbStart.Location = new System.Drawing.Point(162, 28);
+            this.cmbStart.ItemHeight = 20;
+            this.cmbStart.Location = new System.Drawing.Point(161, 28);
             this.cmbStart.Name = "cmbStart";
             this.cmbStart.PreventEnterBeep = true;
-            this.cmbStart.Size = new System.Drawing.Size(121, 22);
+            this.cmbStart.Size = new System.Drawing.Size(121, 26);
             this.cmbStart.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbStart.TabIndex = 21;
             // 
