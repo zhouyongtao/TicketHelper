@@ -115,12 +115,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Content Include="assets\c.png" />
+    <Content Include="assets\d.png" />
+    <Content Include="assets\g.png" />
+    <Content Include="assets\k.png" />
+    <Content Include="assets\p.png" />
     <Content Include="assets\smile.ico" />
     <Content Include="assets\find.ico" />
+    <Content Include="assets\t.png" />
+    <Content Include="assets\u.png" />
     <Content Include="assets\ware.ico" />
     <Content Include="assets\end.ico" />
     <Content Include="assets\start.ico" />
     <Content Include="assets\book.ico" />
+    <Content Include="assets\z.png" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
