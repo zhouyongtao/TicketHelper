@@ -81,11 +81,22 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="tessnet2_64, Version=2.0.4.0, Culture=neutral, PublicKeyToken=1550524b5ba07e29, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\tessnet\tessnet2_64.dll</HintPath>
+    </Reference>
     <Reference Include="Z.ExtensionMethods">
       <HintPath>..\packages\Z.ExtensionMethods.1.3.0.0\lib\Z.ExtensionMethods.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChkVerifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChkVerifyForm.Designer.cs">
+      <DependentUpon>ChkVerifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Cache.cs" />
     <Compile Include="Helper\Encrypt\DESEncrypt.cs" />
     <Compile Include="Helper\Encrypt\MD5Encrypt.cs" />
     <Compile Include="Helper\Encrypt\SHAEncrypt.cs" />
@@ -124,7 +135,12 @@
     <Compile Include="Ticket\ConstantKey.cs" />
     <Compile Include="Ticket\TicketHandler.cs" />
     <Compile Include="Ticket\WeekDayHandler.cs" />
+    <Content Include="Lib\tessnet\tessnet2_64.dll" />
+    <Content Include="Lib\tessnet\tessnet2_64.pdb" />
     <Content Include="train.ico" />
+    <EmbeddedResource Include="ChkVerifyForm.resx">
+      <DependentUpon>ChkVerifyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +184,7 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Lib\tessnet\TesseractOCR.exe.config" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
