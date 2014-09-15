@@ -117,7 +117,7 @@ namespace TicketHelper
                     //记住用户名与密码
                     var loginData = DESEncrypt.Encrypt(this.txtName.Text + "@" + this.txtPwd.Text);
                     string dirPath = Directory.GetCurrentDirectory() + "\\data";
-                    if (Directory.Exists(dirPath))
+                    if (!Directory.Exists(dirPath))
                     {
                         Directory.CreateDirectory(dirPath);
                     }
