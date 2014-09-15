@@ -90,6 +90,14 @@
     <Compile Include="Helper\Encrypt\DESEncrypt.cs" />
     <Compile Include="Helper\Encrypt\MD5Encrypt.cs" />
     <Compile Include="Helper\Encrypt\SHAEncrypt.cs" />
+    <Compile Include="Helper\Extension\ByteExtension.cs" />
+    <Compile Include="Helper\Extension\DateTimeExtension.cs" />
+    <Compile Include="Helper\Extension\IDictionaryExtension.cs" />
+    <Compile Include="Helper\Extension\RegularExtension.cs" />
+    <Compile Include="Helper\Extension\StreamExtension.cs" />
+    <Compile Include="Helper\Extension\StringExtension.cs" />
+    <Compile Include="Helper\Extension\TimeSpanExtension.cs" />
+    <Compile Include="Helper\Extension\TypeExtension.cs" />
     <Compile Include="Helper\HttpUtil.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
