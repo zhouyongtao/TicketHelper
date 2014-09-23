@@ -18,14 +18,12 @@ namespace TicketHelper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new ChkVerifyForm());
-            /*
+           // Application.Run(new ChkVerifyForm());
             var login = new LoginForm();
             if (login.ShowDialog() == DialogResult.OK)
             {
                 Application.Run(new MainForm(login._loginName));
             }
-             */
         }
     }
 }
